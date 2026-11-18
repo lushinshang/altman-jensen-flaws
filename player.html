@@ -72,7 +72,8 @@ button,select{background:var(--surface);color:var(--ink);border:1px solid var(--
   font:inherit;font-size:15px;cursor:pointer;min-height:40px;max-width:100%}
 button:hover,select:hover{border-color:var(--accent)}
 button[aria-pressed="true"]{border-color:var(--accent);color:var(--accent-ink);background:var(--note)}
-#chap{max-width:min(420px,100%)}
+label:has(#chap){display:flex;align-items:center;gap:.5em;max-width:100%}
+#chap{flex:1 1 auto;min-width:0;max-width:min(420px,100%)}
 #list{list-style:none;margin:12px 0 0;padding:0;max-height:50vh;overflow-y:auto;background:var(--surface);border:1px solid var(--line);border-radius:12px}
 #list li{border-bottom:1px solid var(--line)}
 #list li:last-child{border-bottom:0}

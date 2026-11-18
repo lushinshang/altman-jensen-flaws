@@ -164,6 +164,13 @@ footer{max-width:720px;margin:64px auto 0;padding-top:16px;border-top:1px solid 
 <h2 id="sec-6">「重複計算」是什麼意思</h2>
 <p>主持人接著換了題目，轉述一則報導：Altman 在閉門場合向三星高層表示，這個產業存在某些「重複計算」，請他解釋（<a href="https://www.youtube.com/watch?v=RizP4UPzxDU&amp;t=250s" target="_blank" rel="noopener noreferrer">04:10</a>）〔主持人〕。</p>
 <p>Altman 的解釋從過去說起。過去很長一段時間，產業基本上只有一家晶片供應商，大家計算晶圓數量時，可以詢問像他這樣的公司未來需求會是多少，藉此大致了解終端使用者的需求（<a href="https://www.youtube.com/watch?v=RizP4UPzxDU&amp;t=261s" target="_blank" rel="noopener noreferrer">04:21</a>）。現在有很多人在製造晶片，其中很多人「都認為他們會把大部分產量賣給我們、Anthropic 以及其他公司」（<a href="https://www.youtube.com/watch?v=RizP4UPzxDU&amp;t=284s" target="_blank" rel="noopener noreferrer">04:44</a>）。但「我們的需求、資料中心以及其他一切都是有限的」，<strong>許多做晶片的人在跟供應鏈洽談時「假設我們會買下他們所有的晶片」</strong>（<a href="https://www.youtube.com/watch?v=RizP4UPzxDU&amp;t=293s" target="_blank" rel="noopener noreferrer">04:53</a>）。他認為需求與資料中心的擴建都是「穩固的」，只是「我們不可能、也不需要向每一家晶片廠商購買我們所有的供應」（<a href="https://www.youtube.com/watch?v=RizP4UPzxDU&amp;t=308s" target="_blank" rel="noopener noreferrer">05:08</a>）。</p>
+<figure class="diagram"><div class="mermaid-scroll" tabindex="0" role="group" aria-label="流程圖（可左右捲動）"><pre class="mermaid">flowchart TD
+    P1[&quot;過去：基本上只有一家晶片供應商&quot;] --&gt; P2[&quot;問像 OpenAI 這樣的公司&lt;br/&gt;未來需求多少&quot;]
+    P2 --&gt; P3[&quot;大致掌握終端需求&quot;]
+    P3 --&gt; N1[&quot;現在：很多人在製造晶片&lt;br/&gt;其中很多人認為大部分產量&lt;br/&gt;會賣給 OpenAI、Anthropic 等&quot;]
+    N1 --&gt; N2[&quot;洽談時有人假設&lt;br/&gt;OpenAI 買下他們所有的晶片&quot;]
+    N2 --&gt; N3[&quot;但 OpenAI 的需求有限&lt;br/&gt;不會向每家都買全部&quot;]
+    N3 --&gt; N4[&quot;他認為需求與資料中心擴建&lt;br/&gt;仍是穩固的&quot;]</pre></div><figcaption>圖：依 Altman 的解釋整理。「重複計算」是主持人轉述報導的用語；圖中沒有新增數字。</figcaption></figure>
 <p>主持人問這對產業意味著什麼，行情是不是結束了、價格是不是定得太高（<a href="https://www.youtube.com/watch?v=RizP4UPzxDU&amp;t=321s" target="_blank" rel="noopener noreferrer">05:21</a>）〔主持人〕。Altman 說一定會有起伏，但對龐大運算能力的長期需求，以及它所釋放的價值，他認為會持續下去（<a href="https://www.youtube.com/watch?v=RizP4UPzxDU&amp;t=327s" target="_blank" rel="noopener noreferrer">05:27</a>）。</p>
 <aside class="note"><p>重點：他把長短期分開講：「長期趨勢是明確的」，而季與季、年與年之間供需是否能精準吻合，「就比較難說了」（<a href="https://www.youtube.com/watch?v=RizP4UPzxDU&amp;t=345s" target="_blank" rel="noopener noreferrer">05:45</a>）。</p></aside>
 <h2 id="sec-7">供應鏈卡在哪裡</h2>
@@ -208,6 +215,19 @@ footer{max-width:720px;margin:64px auto 0;padding-top:16px;border-top:1px solid 
     if(e.key==='Escape'){close();}
     if(e.key==='Tab'){e.preventDefault();btn.focus();}
   });
+})();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js" integrity="sha384-WmdflGW9aGfoBdHc4rRyWzYuAjEmDwMdGdiPNacbwfGKxBW/SO6guzuQ76qjnSlr" crossorigin="anonymous" onerror="void 0"></script>
+<script>
+(function(){
+  if(typeof mermaid==='undefined')return;
+  try{
+    var dark=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;
+    mermaid.initialize({startOnLoad:false,securityLevel:'strict',theme:dark?'dark':'default',flowchart:{useMaxWidth:false,htmlLabels:true}});
+    var p=mermaid.run({querySelector:'pre.mermaid'});
+    if(p&&p.catch){p.catch(function(){});}
+  }catch(e){}
 })();
 </script>
 </body>

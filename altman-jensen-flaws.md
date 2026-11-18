@@ -77,6 +77,18 @@ Altman 先說，懷疑有很多來自記者，投資人看起來對 AI 相當看
 
 Altman 的解釋從過去說起。過去很長一段時間，產業基本上只有一家晶片供應商，大家計算晶圓數量時，可以詢問像他這樣的公司未來需求會是多少，藉此大致了解終端使用者的需求（[04:21](https://www.youtube.com/watch?v=RizP4UPzxDU&t=261s)）。現在有很多人在製造晶片，其中很多人「都認為他們會把大部分產量賣給我們、Anthropic 以及其他公司」（[04:44](https://www.youtube.com/watch?v=RizP4UPzxDU&t=284s)）。但「我們的需求、資料中心以及其他一切都是有限的」，**許多做晶片的人在跟供應鏈洽談時「假設我們會買下他們所有的晶片」**（[04:53](https://www.youtube.com/watch?v=RizP4UPzxDU&t=293s)）。他認為需求與資料中心的擴建都是「穩固的」，只是「我們不可能、也不需要向每一家晶片廠商購買我們所有的供應」（[05:08](https://www.youtube.com/watch?v=RizP4UPzxDU&t=308s)）。
 
+```mermaid
+flowchart TD
+    P1["過去：基本上只有一家晶片供應商"] --> P2["問像 OpenAI 這樣的公司<br/>未來需求多少"]
+    P2 --> P3["大致掌握終端需求"]
+    P3 --> N1["現在：很多人在製造晶片<br/>其中很多人認為大部分產量<br/>會賣給 OpenAI、Anthropic 等"]
+    N1 --> N2["洽談時有人假設<br/>OpenAI 買下他們所有的晶片"]
+    N2 --> N3["但 OpenAI 的需求有限<br/>不會向每家都買全部"]
+    N3 --> N4["他認為需求與資料中心擴建<br/>仍是穩固的"]
+```
+
+*圖：依 Altman 的解釋整理。「重複計算」是主持人轉述報導的用語；圖中沒有新增數字。*
+
 主持人問這對產業意味著什麼，行情是不是結束了、價格是不是定得太高（[05:21](https://www.youtube.com/watch?v=RizP4UPzxDU&t=321s)）〔主持人〕。Altman 說一定會有起伏，但對龐大運算能力的長期需求，以及它所釋放的價值，他認為會持續下去（[05:27](https://www.youtube.com/watch?v=RizP4UPzxDU&t=327s)）。
 
 > 重點：他把長短期分開講：「長期趨勢是明確的」，而季與季、年與年之間供需是否能精準吻合，「就比較難說了」（[05:45](https://www.youtube.com/watch?v=RizP4UPzxDU&t=345s)）。
